@@ -1,10 +1,5 @@
 'use strict';
 
-
-
-  
-
-
   //contrlador para el dibujo
   angular.module('angularJs2BbApp').controller("ctrlDibujo", function($scope)
   {
@@ -18,17 +13,10 @@
     {
     	var cadena  = indice1.toString()+indice2.toString();
     	$scope.actual = cadena;
-    	//eval("$scope.elementos."+cadena)=true;
+    	
     	if($scope.elementos[cadena]==null)
     		$scope.elementos[cadena]=1;
     	else
     		$scope.elementos[cadena]++;
     }
-
-	$scope.cambiarColorFondo = function(indice1, indice2)
-	{
-
-	}
-
-
   });
